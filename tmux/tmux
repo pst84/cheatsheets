@@ -1,31 +1,52 @@
 ################  SESSIONS ####################
-**** New session ****   $ tmux
-**** New session ****   $ tmux new
+[SESSIONS] **** New session ****   $ tmux
+[SESSIONS] **** New session ****   $ tmux new
 
-**** New session + Name ****   $ tmux new -s MYSESSION
+[SESSIONS] **** New session + Name ****   $ tmux new -s MYSESSION
 
-**** List/View sessions ****   $ tmux ls
-**** List/View sessions ****   $ tmux list-sessions
-**** List/View sessions ****   <LEADER> s
+[SESSIONS] **** List/View sessions ****   $ tmux ls
+[SESSIONS] **** List/View sessions ****   $ tmux list-sessions
+[SESSIONS] **** List/View sessions ****   <LEADER> s
 
-**** List/View session and windows ****   <LEADER> w
+[SESSIONS] **** List/View session and windows ****   <LEADER> w
 
-**** Attach to LAST session ****   $ tmux a
-**** Attach to LAST session ****   $ tmux at
-**** Attach to LAST session ****   $ tmux attach
-**** Attach to LAST session ****   $ tmux attach-session
+[SESSIONS] **** Attach to LAST session ****   $ tmux a
+[SESSIONS] **** Attach to LAST session ****   $ tmux at
+[SESSIONS] **** Attach to LAST session ****   $ tmux attach
+[SESSIONS] **** Attach to LAST session ****   $ tmux attach-session
 
-**** Attach to session MYSESSION ****   $ tmux a -t MYSESSION
-**** Attach to session MYSESSION ****   $ tmux at -t MYSESSION
-**** Attach to session MYSESSION ****   $ tmux attach -t MYSESSION
+[SESSIONS] **** Attach to session MYSESSION ****   $ tmux a -t MYSESSION
+[SESSIONS] **** Attach to session MYSESSION ****   $ tmux at -t MYSESSION
+[SESSIONS] **** Attach to session MYSESSION ****   $ tmux attach -t MYSESSION
 
-**** Kill/Delete session ***   $ tmux kill-session -t MYSESSION
-**** Kill/Delete ALL session BUT the CURRENT ***   $ tmux kill-session -a
-**** Kill/Delete ALL session BUT MYSESSION***   $ tmux kill-session -a -t MYSESSION
+[SESSIONS] **** Kill/Delete session ***   $ tmux kill-session -t MYSESSION
+[SESSIONS] **** Kill/Delete ALL session BUT the CURRENT ***   $ tmux kill-session -a
+[SESSIONS] **** Kill/Delete ALL session BUT MYSESSION***   $ tmux kill-session -a -t MYSESSION
 
-**** Rename session ****   <LEADER> $
+[SESSIONS] **** Rename session ****   <LEADER> $
 
-**** Detach session ****   <LEADER> d
+[SESSIONS] **** Detach session ****   <LEADER> d
 
-**** Next session ****   <LEADER> )
-**** Previous session ****   <LEADER> (
+[SESSIONS] **** Next session ****   <LEADER> )
+[SESSIONS] **** Previous session ****   <LEADER> (
+
+################  WINDOWS ####################
+
+
+[WINDOWS] **** Create new session and new named window ****   $ tmux new -n MYWINDOW
+[WINDOWS] **** Create new named session and new named window ****   $ tmux new -t MYSESSION -n MYWINDOW
+[WINDOWS] **** Create new window ***   <LEADER> c
+
+[WINDOWS] **** Rename current window ***   <LEADER> ,
+
+[WINDOWS] **** Close current window ***   <LEADER> &  OR   CTRL-d
+
+[WINDOWS] **** List/View session and windows ****   <LEADER> w
+
+[WINDOWS] **** Next window ****   <LEADER> n
+[WINDOWS] **** Previous window ****   <LEADER> p
+
+[WINDOWS] **** Select window by number [0-9] ****   <LEADER> [0...9]
+
+[WINDOWS] **** Toggle last active window ****   <LEADER> l
+
