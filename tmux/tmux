@@ -1,0 +1,31 @@
+################  SESSIONS ####################
+**** New session ****   $ tmux
+**** New session ****   $ tmux new
+
+**** New session + Name ****   $ tmux new -s MYSESSION
+
+**** List/View sessions ****   $ tmux ls
+**** List/View sessions ****   $ tmux list-sessions
+**** List/View sessions ****   <LEADER> s
+
+**** List/View session and windows ****   <LEADER> w
+
+**** Attach to LAST session ****   $ tmux a
+**** Attach to LAST session ****   $ tmux at
+**** Attach to LAST session ****   $ tmux attach
+**** Attach to LAST session ****   $ tmux attach-session
+
+**** Attach to session MYSESSION ****   $ tmux a -t MYSESSION
+**** Attach to session MYSESSION ****   $ tmux at -t MYSESSION
+**** Attach to session MYSESSION ****   $ tmux attach -t MYSESSION
+
+**** Kill/Delete session ***   $ tmux kill-session -t MYSESSION
+**** Kill/Delete ALL session BUT the CURRENT ***   $ tmux kill-session -a
+**** Kill/Delete ALL session BUT MYSESSION***   $ tmux kill-session -a -t MYSESSION
+
+**** Rename session ****   <LEADER> $
+
+**** Detach session ****   <LEADER> d
+
+**** Next session ****   <LEADER> )
+**** Previous session ****   <LEADER> (
