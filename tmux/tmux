@@ -1,4 +1,5 @@
 ################  SESSIONS ####################
+#
 [SESSIONS] **** New session ****   $ tmux
 [SESSIONS] **** New session ****   $ tmux new
 
@@ -32,7 +33,6 @@
 
 ################  WINDOWS ####################
 
-
 [WINDOWS] **** Create new session and new named window ****   $ tmux new -n MYWINDOW
 [WINDOWS] **** Create new named session and new named window ****   $ tmux new -t MYSESSION -n MYWINDOW
 [WINDOWS] **** Create new window ***   <LEADER> c
@@ -50,3 +50,51 @@
 
 [WINDOWS] **** Toggle last active window ****   <LEADER> l
 
+################  PANES ####################
+
+[PANES] **** Toggle last active pane ****   <LEADER> ;
+
+[PANES] **** Split pane with horizontal layout ****   <LEADER> %
+[PANES] **** Split pane with horizontal layout ****   <LEADER> _
+
+[PANES] **** Split pane with horizontal layout ****   <LEADER> "
+[PANES] **** Split pane with horizontal layout ****   <LEADER> |
+
+[PANES] **** Move the current pane LEFT ****   <LEADER> {
+[PANES] **** Move the current pane RIGHT ****   <LEADER> }
+
+[PANES] **** Show pane numbers ****   <LEADER> q
+[PANES] **** Switch/Select pane number ****   <LEADER> q [0..9]
+
+[PANES] **** Toggle pane zoom ****   <LEADER> z
+
+[PANES] **** Convert pane into a Window ****   <LEADER> !
+
+[PANES] **** Resize current pane  ****   <LEADER> [HJKL]
+
+[PANES] **** Close current pane ****   <LEADER> x  (x like [X] close)
+
+[PANES] **** Toggle between pane layouts ****   <LEADER> Space
+
+################  COPY MODE ####################
+
+[COPY] **** Enter copy mode ****   <LEADER> [
+[COPY] **** Copy selection ****   ENTER
+[COPY] **** Paste contents of buffer_0  **** <LEADER> ]
+
+[COPY] **** display buffer_0 contents ****  : show-buffer
+[COPY] **** copy entire visible contents of pane to a buffer ****  : capture-pane
+[COPY] **** Show all buffers **** : list-buffers
+[COPY] **** Show all buffers and paste selected **** : choose-buffer
+[COPY] **** Save buffer contents to buf.txt **** : save-buffer buf.txt
+[COPY] **** delete buffer_1 **** : delete-buffer -b 1
+
+################ MISC ####################
+
+[MISC]  **** Enter command mode **** <LEADER> :    (colon)
+
+[MISC]  **** List key bindings **** $ tmux list-keys
+[MISC]  **** List key bindings **** [COMMAND] :list-keys
+[MISC]  **** List key bindings **** $ tmux ?
+
+[MISC]  **** Show every session, window, pane etc... **** $ tmux info
