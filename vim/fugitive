@@ -1,0 +1,27 @@
+Show help *** :help fugitive
+Show help at the key mapping section (summary buffer) *** g?
+
+Run git commands ***  :G[it] [args]  e.g. :Git log; :Git status
+
+Show SUMMARY buffer (equivalent of `git status`) *** :G
+
+[SUMMARY] show help at the key mapping section - show commit maps *** c?
+[SUMMARY] git add --intent-to-add my_untracked_file *** I
+[SUMMARY] git add stage_a_file *** s
+[SUMMARY] git rm --staged stage_a_file (staged -> untracked) *** u
+[SUMMARY] git commit (commit staged files) *** cc
+[SUMMARY] git commit --verbose (commit staged files and show diff) *** cvc
+[SUMMARY] amend the last commit *** ca
+[SUMMARY] reword the last commit *** cw
+[SUMMARY] to create a fixup commit *** cf
+[SUMMARY] to revert the commit under the cursor *** crc
+[SUMMARY] show inline diff of a file *** >
+[SUMMARY] close inline diff of a file *** <
+[SUMMARY] toggle inline diff of a file *** =
+[SUMMARY] inline diff of a files one by one *** ]c and [c
+[SUMMARY] stage line or hunk in a diff (git add --patch main.py) HIGHLIGHT FIRST WITH V *** s
+[SUMMARY] unstage line or hunk in a diff (git reset --patch main.py) HIGHLIGHT FIRST WITH V *** u
+[SUMMARY] open FULL diff over a file under Unstaged section (diff index vs worktree) *** dv
+[SUMMARY] open FULL diff over a file under Staged section (diff index vs lastcommit) *** dv
+
+Create new feature branch `fixit` *** :G switch -c fixit
