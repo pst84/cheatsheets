@@ -25,3 +25,14 @@ Show SUMMARY buffer (equivalent of `git status`) *** :G
 [SUMMARY] open FULL diff over a file under Staged section (diff index vs lastcommit) *** dv
 
 Create new feature branch `fixit` *** :G switch -c fixit
+
+[HISTORY] git log *** :G log
+[HISTORY] scroll over commits *** [[ ]]
+[HISTORY] open a commit *** o
+[HISTORY] git log allows any argument *** :G log --oneline --decorate --graph --all
+[HISTORY] view in quickfix *** :Gclog
+[HISTORY] If you really need colors (by the cost of interacting with the buffer) *** :term git log --oneline --graph --all
+
+[MERGE]   :Git merge feature (while on master) - Always check out the target branch during a merge *** (merge feature -> into master)
+[MERGE]   dv - 2-way diff Left: "ours" the HEAD (tip of the master), Center: Current Working Copy, Right: "Theirs" - Tip of the branch you are trying to merge into master
+[MERGE] To stage resolved conflict *** :Gwrite  or :w(rite) + s(tage)
