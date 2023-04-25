@@ -1,0 +1,43 @@
+*** Navigation ***
+o - Open file/directory in new horizontal split
+v - Open file/directory in new vertical split
+t - Open file/directory in new tab
+p - Preview file without (moving the cursor from netrw)
+x - Open the file/directory with the default system app
+
+i - cycle through different listing modes (including Tree mode)
+
+*** File Operations ***
+
+% - Create a new file
+d - Create a new directory
+D - Delete the file/directory under the cursor (or marked files/dirs)
+R - Rename/move file/directory
+
+Copying files however is a little more involved. You need to mark the files you want to copy, mark 
+the destination, then execute the operation (a little tedious):
+
+mf - Toggle whether the file/directory is marked
+mt - Mark the directory under the cursor as the copy target
+mc - Execute the copy operation
+mu - Unmark all marked items
+
+:e. - Open the current directory normally
+:sp. - Open the current directory in a horizontal split
+:vs. - Open the current directory in a vertical split
+:tabe. - Open the current directory in a new tab
+
+:Ntree - Open NetRW
+:Explore - Open NetRW
+:Ex - Open NetRW. Use current buffer if available, otherwise split horizontally
+:Ex! - Open NetRW. Use current buffer if available, otherwise split vertically
+
+:Hex - Open NetRW. Horizontal split
+:Vex - Open NetRW. Vertical split
+:Sex - Horizontal split
+:Lex - Vertical split full height, current working directory
+
+:Sex! - Vertical split
+:Hex! - Horizontal split (opposite side)
+:Vex! - Vertical split (opposite side)
+:Lex! - Vertical split, current working directory (opposite side)
